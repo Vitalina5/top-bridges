@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+body {
+  background: linear-gradient(to left, #8eb8cf, #cfcdb6, #e4cbd0);
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.text {
+  width: 75%;
+  margin: auto;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  background: linear-gradient(to left, #17468d, #1b808b, #e64666);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+}
+
+h2 {
+  color: #c44f6c;
+  font-size: 30px;
+  text-align: center;
+  margin: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+}
+
+h3 {
+  color: #1b808b;
+  font-size: 25px;
+  text-align: center;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+}
+
+.one {
+  color: #17468d;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #26569c;
+  align-self: center;
+  padding: 10px;
+  margin: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+}
+
+.btnDelete {
+  background-color: #cf4c6a;
+  margin: 0;
+  display: inline-block;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  align-self: center;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+}
+
+.btnShowText {
+  color: #08377c;
+  border: none;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  background-color: transparent
+}
+
+.slides {
+   margin: 20px;
+}
+
+#topcontrol{
+  margin-right: 20px;
+}
+
+@media all and (max-width: 980px) {
+  p {
+    font-size: 25px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media all and (max-width: 800px) {
+  h1 {
+    font-size: 25px;
   }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 500px) {
+   h2 {
+     font-size: 25px;
+   }
+
+   h3 {
+     font-size: 20px;
+   }
+
+   p {
+     font-size: 18px;
+   }
 }
